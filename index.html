@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Generate custom social media cards with title and subtitle easily with our Social Card Generator.">
+    <meta name="keywords" content="social card, social media, card generator, image generator, title, subtitle">
+    <meta name="author" content="Wan Sim">
+    <meta property="og:title" content="Social Card Generator">
+    <meta property="og:description"
+        content="Generate custom social media cards with title and subtitle easily with our Social Card Generator.">
+    <meta property="og:image" content="https://yourdomain.com/path/to/preview-image.jpg">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:type" content="website">
+    <title>Social Card Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Social Card Generator</h1>
+    <form id="image-form">
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div class="form-group">
+            <label for="subtitle">Subtitle:</label>
+            <input type="text" id="subtitle" name="subtitle" required>
+        </div>
+        <div class="form-group">
+            <label for="filename">Filename:</label>
+            <input type="text" id="filename" name="filename" placeholder="social-card">
+        </div>
+        <button type="submit">Generate Image</button>
+    </form>
+    <canvas id="imageCanvas" width="1200" height="630"></canvas>
+    <a id="downloadLink" style="display:none;">Download Image</a>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
